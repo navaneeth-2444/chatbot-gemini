@@ -1,2 +1,5 @@
 # Gemini-Chatbot
-Download the repo, unzip, open the folder in terminal and run node npm start
+- Download the repo
+- unzip
+- open the folder in terminal
+- run node `npm start`
