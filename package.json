@@ -1,0 +1,14 @@
+{
+  "name": "symptom-tracker",
+  "version": "1.0.0",
+  "main": "server.mjs",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "express": "^4.21.1",
+    "node-fetch": ""
+  },
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
