@@ -1,10 +1,14 @@
 import express from 'express';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 const app = express();
 const port = 3000;
 
 // Initialize Gemini API
-const genAI = new GoogleGenerativeAI('AIzaSyBDEA1iia2FldTyBEovX7IfNKbkqJhkLeM'); // Replace with your API key
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY); // Load API key from .env file
 const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
 
 app.use(express.json());
